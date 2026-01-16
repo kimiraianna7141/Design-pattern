@@ -1,5 +1,5 @@
 <?php
-class CoputerFacade{
+class ComputerFacade{
     private $cpu;
     private $memory;
     private $hardDrive;
@@ -8,6 +8,11 @@ class CoputerFacade{
         $this->cpu = new CPU();
         $this->hardDrive = new HardDrive();
     }
-
-    public function start
-}
+    
+        public function startComputer() {
+            $this->cpu->freeze();
+            $this->hardDrive->read();
+            $this->memory->load();
+            $this->cpu->execute();
+        }
+    }
