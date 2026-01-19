@@ -1,5 +1,5 @@
 <?php
-class ComputerFacade{
+class State{
     private $cpu;
     private $memory;
     private $hardDrive;
